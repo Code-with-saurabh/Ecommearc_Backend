@@ -11,8 +11,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB connection URI
-//const mongoDB = 'mongodb+srv://gpgazhmrj:NiIAmKaqmT6CxKrz@cluster0.rdhlq.mongodb.net/sample_mflix?retryWrites=true&w=majority&appName=Cluster0';
-const mongoDB =  process.env.mongoURL;
+const mongoDB = 'mongodb+srv://gpgazhmrj:NiIAmKaqmT6CxKrz@cluster0.rdhlq.mongodb.net/sample_mflix?retryWrites=true&w=majority&appName=Cluster0';
+//const mongoDB =  process.env.mongoURL;
 // MongoDB connection setup
 mongoose.connect(mongoDB, {
     useNewUrlParser: true,
